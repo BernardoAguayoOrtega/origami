@@ -1,0 +1,35 @@
+{
+  "name": "origami",
+  "version": "1.0.0",
+  "description": "Marketing Website Origami",
+  "main": "index.tsx",
+  "scripts": {
+    "test": "nope",
+    "dev":"next",
+    "build":"next build",
+    "start":"next start",
+    "save": "git add . && git commit && git push origin main"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BernardoAguayoOrtega/origami.git"
+  },
+  "keywords": [
+    "react",
+    "react-dom",
+    "next",
+    "server-side-rendering",
+    "node"
+  ],
+  "author": "Bernardo Aguayo Ortega",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/BernardoAguayoOrtega/origami/issues"
+  },
+  "homepage": "https://github.com/BernardoAguayoOrtega/origami#readme",
+  "dependencies": {
+    "next": "^10.0.5",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1"
+  }
+}
