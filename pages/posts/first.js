@@ -16,7 +16,6 @@ export default function FirstPost(props) {
 				</Link>
 			</h2>
 			<br />
-			{props.starts}
 		</Container>
 	);
 }

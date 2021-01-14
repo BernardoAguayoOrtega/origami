@@ -3,8 +3,6 @@ import Head from 'next/head'
 
 function HomePage(props){
 
-  console.log(props)
-
   return (
     <>
     <Head>
@@ -14,6 +12,8 @@ function HomePage(props){
       <Link href='/posts/first'>
         <a>First Post</a>
       </Link>
+      <br />
+      <div>{props.starts}</div>
     </>
   )
 }
