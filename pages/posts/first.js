@@ -1,9 +1,10 @@
 import Link from 'next/link';
 import Head from 'next/head';
+import Container from '../../components/container'
 
 export default function FirstPost() {
 	return (
-		<>
+		<Container>
 			<Head>
 				<title>My first post</title>
 			</Head>
@@ -14,7 +15,6 @@ export default function FirstPost() {
 				</Link>
 			</h2>
 			<br />
-			<img src='msdlas' alt='some image' />
-		</>
+		</Container>
 	);
 }
