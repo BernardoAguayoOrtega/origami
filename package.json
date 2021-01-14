@@ -5,9 +5,9 @@
   "main": "index.tsx",
   "scripts": {
     "test": "nope",
-    "dev":"next",
-    "build":"next build",
-    "start":"next start",
+    "dev": "next",
+    "build": "next build",
+    "start": "next start",
     "save": "git add . && git commit && git push origin main"
   },
   "repository": {
@@ -30,6 +30,7 @@
   "dependencies": {
     "next": "^10.0.5",
     "react": "^17.0.1",
-    "react-dom": "^17.0.1"
+    "react-dom": "^17.0.1",
+    "styled-jsx": "^3.3.2"
   }
 }
