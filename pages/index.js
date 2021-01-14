@@ -1,7 +1,10 @@
 import Link from 'next/link'
 import Head from 'next/head'
 
-function HomePage(){
+function HomePage(props){
+
+  console.log(props)
+
   return (
     <>
     <Head>
@@ -13,6 +16,16 @@ function HomePage(){
       </Link>
     </>
   )
+}
+
+export async function getServerSideProps(context) {
+  const res = await fetch('https://api.github.com/repos/vercel/next.js')
+
+  const json = await res?.json()
+
+  return {
+    props: { starts: json.stargazers_count}
+  }
 }
 
 export default HomePage

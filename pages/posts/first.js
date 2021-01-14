@@ -2,7 +2,8 @@ import Link from 'next/link';
 import Head from 'next/head';
 import Container from '../../components/container'
 
-export default function FirstPost() {
+export default function FirstPost(props) {
+
 	return (
 		<Container>
 			<Head>
@@ -15,6 +16,17 @@ export default function FirstPost() {
 				</Link>
 			</h2>
 			<br />
+			{props.starts}
 		</Container>
 	);
+}
+
+export async function getStaticProps() {
+  const res = await fetch('https://api.github.com/repos/vercel/next.js')
+
+  const json = await res?.json()
+
+  return {
+    props: { starts: json.stargazers_count, different: true}
+  }
 }
