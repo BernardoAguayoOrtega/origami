@@ -1,31 +1,35 @@
-import Link from 'next/link'
-import Head from 'next/head'
+import Link from 'next/link';
+import Head from 'next/head';
 
-function HomePage(props){
-
-  return (
-    <>
-    <Head>
-      <title>Welcome</title>
-    </Head>
-      <div>Welcome to Next.js!</div>
-      <Link href='/posts/first'>
-        <a>First Post</a>
-      </Link>
-      <br />
-      <div>{props.starts}</div>
-    </>
-  )
+function HomePage(props) {
+	return (
+		<>
+			<Head>
+				<title>Welcome</title>
+			</Head>
+			<div>Welcome to Next.js!</div>
+			<Link href='/posts/first'>
+				<a>First Post</a>
+			</Link>
+			<br />
+			<div>{props.starts}</div>
+			<style jsx>{`
+				a {
+					color: red;
+				}
+			`}</style>
+		</>
+	);
 }
 
 export async function getServerSideProps(context) {
-  const res = await fetch('https://api.github.com/repos/vercel/next.js')
+	const res = await fetch('https://api.github.com/repos/vercel/next.js');
 
-  const json = await res?.json()
+	const json = await res?.json();
 
-  return {
-    props: { starts: json.stargazers_count}
-  }
+	return {
+		props: { starts: json.stargazers_count },
+	};
 }
 
-export default HomePage
+export default HomePage;
