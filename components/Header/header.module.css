@@ -1,6 +1,31 @@
-.container {
-  max-width: 36rem;
+.header {
+  align-self: center;
+  display: flex;
+  justify-content: space-around;
+  padding:  1rem;
+  max-width: 45%;
+}
+
+.icon{
+  font-size: 2rem;
+}
+
+.linksContainer {
+  align-self: center;
+  display: flex;
+  font-size: 1.1rem;
+  justify-content: center;
+}
+
+.link{
+  color: gray;
+  text-transform: capitalize;
+  margin: 0 1rem;
+}
+
+.subscribe {
+  background-color: rgba(228, 241, 254, .5);
+  color: lightblue;
+  font-weight: bold;
   padding: 0 1rem;
-  margin: 3rem auto 6 rem;
-  border: 1px solid red;
 }
