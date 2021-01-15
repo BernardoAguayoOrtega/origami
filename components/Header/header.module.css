@@ -2,11 +2,12 @@
   align-self: center;
   display: flex;
   justify-content: space-around;
-  padding:  1rem;
+  padding: 1rem;
   max-width: 45%;
 }
 
-.icon{
+.icon {
+  color: gray;
   font-size: 2rem;
 }
 
@@ -17,7 +18,7 @@
   justify-content: center;
 }
 
-.link{
+.link {
   color: gray;
   text-transform: capitalize;
   margin: 0 1rem;
@@ -27,5 +28,6 @@
   background-color: rgba(228, 241, 254, .5);
   color: lightblue;
   font-weight: bold;
+  text-transform: capitalize;
   padding: 0 1rem;
 }
