@@ -1,12 +1,12 @@
 import { ReactElement } from 'react';
-import styles from './container.module.css';
+import styles from './header.module.css';
 
-function Header(): ReactElement {
+const Header = (): ReactElement => {
 	return (
 		<>
-			<div className={styles.container}>I'm the header</div>;
+			<div className={styles.header}>I'm the header</div>
 		</>
 	);
-}
+};
 
 export default Header;

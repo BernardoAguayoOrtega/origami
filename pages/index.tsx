@@ -1,14 +1,17 @@
 import Head from 'next/head';
-import Container from '../components/PageContainer/index'
+import Container from '../components/PageContainer/index';
+import Header from '../components/Header/index';
 
 function HomePage() {
 	return (
 		<>
 			<Head>
 				<title>Welcome</title>
-				<meta name="viewport" content="initial-scale=1.0, width=device-width" />
+				<meta name='viewport' content='initial-scale=1.0, width=device-width' />
 			</Head>
-			<Container style='red'/>
+			<Container style='home'>
+				<Header />
+			</Container>
 		</>
 	);
 }
