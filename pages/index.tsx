@@ -1,6 +1,5 @@
 import Head from 'next/head';
 import Container from '../components/PageContainer/index';
-import Header from '../components/Header/index';
 
 function HomePage() {
 	return (
@@ -10,7 +9,7 @@ function HomePage() {
 				<meta name='viewport' content='initial-scale=1.0, width=device-width' />
 			</Head>
 			<Container style='home'>
-				<Header />
+				home
 			</Container>
 		</>
 	);
