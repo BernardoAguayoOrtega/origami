@@ -1,12 +1,12 @@
 import Link from 'next/link';
 import { ReactElement } from 'react';
 import styles from './header.module.css';
-import { GiFoldedPaper } from 'react-icons/gi';
+import { IoPlanetOutline } from 'react-icons/io5';
 
 const Header = (): ReactElement => {
 	return (
 		<div className={styles.header}>
-			<GiFoldedPaper className={styles.icon} />
+			<IoPlanetOutline className={styles.icon} />
 			<div className={styles.linksContainer}>
 				<Link href='/'>
 					<a className={styles.link}>tutorials</a>
