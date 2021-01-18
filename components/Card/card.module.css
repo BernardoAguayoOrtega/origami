@@ -2,11 +2,18 @@
   align-self: center;
   border-radius: 1rem;
   box-shadow: 1px 1px 5px 0px rgba(50, 50, 50, 0.75);
+  cursor: pointer;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  transition: 1s;
   margin: 0 1rem;
   min-width: 17rem;
+}
+
+.container:hover{
+  transform: scale(1.05);
+  transition: 1s;
 }
 
 .imageContainer {
