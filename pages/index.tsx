@@ -1,5 +1,6 @@
 import Head from 'next/head';
 import Container from '../components/PageContainer/index';
+import Carousel from '../components/Carousel/index';
 
 function HomePage() {
 	return (
@@ -13,6 +14,7 @@ function HomePage() {
 					<h1>Origami, "Ori" means folding and</h1>
 					<h1>"Gami" means paper.</h1>
 				</div>
+				<Carousel />
 			</Container>
 			<style jsx>{`
 				.title {
