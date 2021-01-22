@@ -13,7 +13,7 @@ function HomePage() {
 
 	return (
 		<>
-			<Modal open={open} setOpen={setOpen} />
+			<Modal description='some description' title='some title, amazing title' image='https://images.unsplash.com/photo-1552727408-5d0599032dfb?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MTl8fHxlbnwwfHx8&auto=format&fit=crop&w=500&q=60' open={open} setOpen={setOpen} />
 			<Head>
 				<title>Welcome</title>
 				<meta name='viewport' content='initial-scale=1.0, width=device-width' />
