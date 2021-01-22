@@ -17,7 +17,9 @@ const Modal: React.FC<modalInterface> = ({
 	description,
 }): ReactElement => {
 	const handleClose = (e) => {
-		if(e?.target.children?.length ===1) {setOpen(false)}
+		if (e?.target.children?.length === 1) {
+			setOpen(false);
+		}
 	};
 	return (
 		<div
@@ -27,8 +29,12 @@ const Modal: React.FC<modalInterface> = ({
 				<figure>
 					<img src={image} alt={title} />
 				</figure>
-				<h3>{title}</h3>
-				<p>{description}</p>
+				<div className={styles.modalContent}>
+					<h3>{title}</h3>
+					<div className={styles.description}>
+						<p>{description}</p>
+					</div>
+				</div>
 			</div>
 		</div>
 	);

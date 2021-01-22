@@ -1,5 +1,4 @@
 .base{
-  background-color: red;
   display: none;
 }
 
@@ -14,11 +13,39 @@
 }
 
 .open figure{
-  width: 5rem;
+  border-radius: 1rem 1rem 0 0;
+  width: 20rem;
+}
+
+.open figure img {
+  border-radius: 1rem 1rem 0 0;
 }
 
 .modal{
   background-color: wheat;
+  border-radius: 1rem;
+  right:40%;
   position: absolute;
-  z-index: 101;
+  top: 30%;
+}
+
+.modalContent{
+  padding: 1rem;
+}
+
+.modalContent h3 {
+  text-transform: capitalize;
+}
+
+.description{
+  max-height: 10rem;
+  max-width: 15rem;
+  overflow: auto;
+}
+
+.description::-webkit-scrollbar {
+  width: 1px;               /* width of the entire scrollbar */
+}
+.description::-webkit-scrollbar-track {
+  background: white;        /* color of the tracking area */
 }
