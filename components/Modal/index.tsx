@@ -14,7 +14,7 @@ const Modal: React.FC<modalInterface> = ({ open, setOpen, image, title, descript
   const handleClose = () => setOpen(false)
 
 	return (
-		<div className={open ? styles.open : styles.close} onClick={handleClose}>
+		<div className={`${styles.base} ${open ? styles.open : styles.close}`} onClick={handleClose}>
       <div className="modal">
         <figure>
           <img src={image} alt={title}/>  

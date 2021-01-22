@@ -1,8 +1,18 @@
+.base{
+  background-color: red;
+  display: none;
+}
+
 .open{
   background-color: rgba(0, 0, 0, .6);
+  display: initial;
   top: 0;
   position: absolute;
   height: 100%;
   width: 100%;
   z-index: 100;
+}
+
+.open figure{
+  width: 5rem;
 }
