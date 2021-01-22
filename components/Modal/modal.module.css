@@ -16,3 +16,9 @@
 .open figure{
   width: 5rem;
 }
+
+.modal{
+  background-color: wheat;
+  position: absolute;
+  z-index: 101;
+}
