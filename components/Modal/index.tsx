@@ -27,13 +27,11 @@ const Modal: React.FC<modalInterface> = ({
 			onClick={handleClose}>
 			<div className={styles.modal}>
 				<figure>
-					<img src={image} alt={title} />
+					<img src={image} alt={title}/>
 				</figure>
-				<div className={styles.modalContent}>
-					<h3>{title}</h3>
-					<div className={styles.description}>
-						<p>{description}</p>
-					</div>
+				<div className={styles.content}>
+					<h4>{title}</h4>
+					<p>{description}</p>
 				</div>
 			</div>
 		</div>

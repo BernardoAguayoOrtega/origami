@@ -4,7 +4,7 @@
 
 .open{
   background-color: rgba(0, 0, 0, .6);
-  display: initial;
+  display: flex;
   top: 0;
   position: absolute;
   height: 100%;
@@ -12,40 +12,37 @@
   z-index: 100;
 }
 
-.open figure{
-  border-radius: 1rem 1rem 0 0;
-  width: 20rem;
+
+.modal {
+  background-color:white;
+  margin: auto;
+  min-height: 70%;
+  max-height: 70%;
+  width: 25%;
+  z-index: 101;
 }
 
-.open figure img {
-  border-radius: 1rem 1rem 0 0;
+.modal figure {
+  width: 100%;
 }
 
-.modal{
-  background-color: wheat;
-  border-radius: 1rem;
-  right:40%;
-  position: absolute;
-  top: 30%;
+.modal img {
+  width: 100%;
 }
 
-.modalContent{
-  padding: 1rem;
+.content{
+  max-height: 11rem;
+  padding: .5rem;
+  overflow:auto;
 }
 
-.modalContent h3 {
+.content > h4 {
   text-transform: capitalize;
 }
 
-.description{
-  max-height: 10rem;
-  max-width: 15rem;
-  overflow: auto;
-}
-
-.description::-webkit-scrollbar {
+.content::-webkit-scrollbar {
   width: 1px;               /* width of the entire scrollbar */
 }
-.description::-webkit-scrollbar-track {
+.content::-webkit-scrollbar-track {
   background: white;        /* color of the tracking area */
 }

@@ -8,7 +8,7 @@
   justify-content: center;
   transition: 1s;
   margin: 0 1rem;
-  min-width: 17rem;
+  min-width: 11rem;
 }
 
 .container:hover{
