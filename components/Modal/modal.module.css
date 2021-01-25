@@ -31,7 +31,7 @@
 }
 
 .content{
-  max-height: 28vh;
+  max-height: 23vh;
   padding: .5rem;
   overflow:auto;
 }
@@ -45,4 +45,93 @@
 }
 .content::-webkit-scrollbar-track {
   background: white;        /* color of the tracking area */
+}
+
+@media only screen and (max-width: 1200px) {
+  .content{
+    max-height: 25vh;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .content{
+    max-height: 28vh;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+
+  .modal{
+    width: 35%;
+  }
+
+  .content{
+    max-height: 20vh;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+
+  .modal{
+    width: 40%;
+  }
+
+  .content{
+    max-height: 20vh;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+
+  .modal{
+    width: 40%;
+  }
+
+  .content{
+    max-height: 25vh;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+
+  .modal{
+    width: 50%;
+  }
+
+  .content{
+    max-height: 25vh;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+
+  .modal{
+    width: 55%;
+  }
+
+  .content{
+    max-height: 30vh;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+
+  .modal{
+    width: 70%;
+  }
+
+  .content{
+    max-height: 30vh;
+  }
+}
+
+@media only screen and (max-width: 300px) {
+
+  .modal{
+    width: 80%;
+  }
+
+  .content{
+    max-height: 30vh;
+  }
 }
