@@ -31,3 +31,36 @@
   text-transform: capitalize;
   padding: 0 1rem;
 }
+
+@media only screen and (max-width: 1050px) {
+  .header {
+    max-width: 60%;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .header {
+    max-width: 70%;
+  }
+}
+
+@media only screen and (max-width: 670px) {
+  .header {
+    max-width: 100%;
+  }
+}
+
+@media only screen and (max-width: 530px) {
+  .header {
+    align-self: center;
+    justify-content: center;
+  }
+
+  .linksContainer{
+    flex-direction: column;
+  }
+
+  .icon{
+    margin: auto 0;
+  }
+}
