@@ -3,6 +3,7 @@ import Container from '../components/PageContainer/index';
 import Carousel from '../components/Carousel/index';
 import { useState } from 'react';
 import Modal from '../components/Modal';
+import styles from '../styles/index.module.css'
 
 function HomePage() {
 	const [open, setOpen] = useState(false);
@@ -27,23 +28,11 @@ Mauris porttitor malesuada lectus, id congue ipsum sagittis at. Sed vitae effici
 				<meta name='viewport' content='initial-scale=1.0, width=device-width' />
 			</Head>
 			<Container style='home' setOpen={setOpen}>
-				<div className='title'>
+				<div className={styles.title}>
 					<h1>Origami, "Ori" means folding and</h1>
 					<h1>"Gami" means paper.</h1>
 				</div>
-				<Carousel onClick={handleOpen}/>
 			</Container>
-			<style jsx>{`
-				.title {
-					margin-left: 3rem;
-					margin-top: 3rem;
-				}
-
-				h1 {
-					color: rgba(0, 0, 0, 0.7);
-					font-weight: 700;
-				}
-			`}</style>
 		</>
 	);
 }

@@ -1,0 +1,49 @@
+.title {
+  margin-left: 3rem;
+  margin-top: 3rem;
+}
+
+.title > h1 {
+  color: rgba(0, 0, 0, 0.7);
+  font-weight: 700;
+}
+
+@media only screen and (max-width: 650px) {
+  .title {
+    font-size: .8rem;
+  }
+}
+
+@media only screen and (max-width: 530px) {
+  .title {
+    font-size: .7rem;
+    margin-left: 2rem;
+    margin-top: 2rem;
+  }
+}
+
+@media only screen and (max-width: 445px) {
+  .title {
+    font-size: 1rem;
+    margin-left: 1.5rem;
+    margin-top: 1.5rem;
+  }
+}
+
+@media only screen and (max-width: 385px) {
+  .title {
+    font-size: .9rem;
+  }
+}
+
+@media only screen and (max-width: 335px) {
+  .title {
+    font-size: .7rem;
+  }
+}
+
+@media only screen and (max-width: 300px) {
+  .title {
+    font-size: .8rem;
+  }
+}
