@@ -31,7 +31,7 @@
 }
 
 .content{
-  max-height: 11rem;
+  max-height: 28vh;
   padding: .5rem;
   overflow:auto;
 }
