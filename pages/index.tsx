@@ -32,6 +32,7 @@ Mauris porttitor malesuada lectus, id congue ipsum sagittis at. Sed vitae effici
 					<h1>Origami, "Ori" means folding and</h1>
 					<h1>"Gami" means paper.</h1>
 				</div>
+				<Carousel onClick={handleOpen}/>
 			</Container>
 		</>
 	);

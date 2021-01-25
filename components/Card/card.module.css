@@ -39,3 +39,9 @@
   font-weight: bold;
   text-transform: capitalize;
 }
+
+@media only screen and (max-width: 670px) {
+  .container {
+    margin: 1rem 0;
+  }
+}
