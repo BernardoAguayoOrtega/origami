@@ -6,12 +6,14 @@ import { IoPlanetOutline } from 'react-icons/io5';
 const Header = (): ReactElement => {
 	return (
 		<div className={styles.header}>
-			<IoPlanetOutline className={styles.icon} />
+			<Link href='/'>
+				<IoPlanetOutline className={styles.icon} />
+			</Link>
 			<div className={styles.linksContainer}>
 				<Link href='/'>
 					<a className={styles.link}>tutorials</a>
 				</Link>
-				<Link href='/'>
+				<Link href='/about'>
 					<a className={styles.link}>about</a>
 				</Link>
 				<Link href='/'>

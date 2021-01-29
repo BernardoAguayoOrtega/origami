@@ -1,6 +1,5 @@
 .container {
   height: 85vh;
-  width: 100vw;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -15,15 +14,22 @@
 
 .description {
   margin-left: 3rem;
+  color: gray;
 }
 .container__content img {
   border-radius: 2rem;
   box-shadow: 1px 1px 5px 5px rgb(50 50 50 / 75%);
-  width: 50%;
+  /* width: 50%; */
+  max-width: 300px;
 }
 
 @media only screen and (max-width: 1050px) {
+  .container {
+    height: auto;
+  }
+
   .container__content {
+    margin-top: 50px;
     flex-direction: column;
   }
   .description {
